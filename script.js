@@ -36,7 +36,7 @@ function createHearts(container) {
 	}
 }
 const text = document.getElementById("text");
-const prog = "I AM GARIMA SINGH";
+const prog = "I AM GARIMA.";
 let idx = 1;
 
 setInterval(writeText, 100);
@@ -66,3 +66,8 @@ window.addEventListener('mousemove', (e) => {
 	});
 });
 
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
